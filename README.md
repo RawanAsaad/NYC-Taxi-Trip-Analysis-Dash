@@ -35,7 +35,7 @@ This app allows users to explore NYC Taxi data with the following features:
 
 | File | Description |
 |------|-------------|
-| `app_full_step1_to_3.py` | Full Dash app source code (Steps 1–3) |
+| `Taxi_Dash.py` | Full Dash app source code (Steps 1–3) |
 | `ny_taxi.csv` | NYC Taxi trip data (cleaned sample) |
 | `README.md` | Project overview and instructions |
 
