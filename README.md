@@ -45,7 +45,8 @@ This app allows users to explore NYC Taxi data with the following features:
 ## 🚀 How to Run the App
 
 1. Make sure you have Python installed.
-2. Install required libraries:
+2. install the dataset `train_2015.csv` from here : https://www.kaggle.com/datasets/edwinytleung/nyc-yellow-taxi-2015-sample-data/data?select=train_2015.csv
+3. Install required libraries:
 
 ```bash
 pip install dash pandas plotly dash-bootstrap-components
