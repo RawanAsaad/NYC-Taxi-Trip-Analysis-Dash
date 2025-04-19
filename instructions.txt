@@ -1,0 +1,71 @@
+📌 NY Taxi Dash Assignment (Question-Based Format)
+Objective
+Students will create an interactive Dash web app to analyze the NYC Taxi dataset. The app should provide filters, visualizations, and insights based on user inputs.
+
+📌 Assignment Questions & Tasks
+1️⃣ Data Overview & Loading
+✅ Load the NYC Taxi dataset into a Pandas DataFrame.
+🔹 Q1: How many total trips are in the dataset?
+🔹 Q2: What are the unique taxi vendors in the dataset?
+
+💡 Hint: Use .shape, .unique(), and .value_counts().
+
+2️⃣ Interactive Dashboard Filters
+✅ Create a sidebar with filters:
+
+Dropdown: Filter by taxi vendor (VendorID)
+Slider: Filter by fare amount (fare_amount)
+Date Picker: Select a range of pickup dates (pickup_datetime)
+🔹 Q3: How do different taxi vendors impact trip distribution?
+🔹 Q4: What is the average fare amount based on user-selected filters?
+
+💡 Hint: Use Dash components like dcc.Dropdown, dcc.Slider, and dcc.DatePickerRange.
+
+3️⃣ Visualizations & Analysis
+✅ Implement three charts:
+
+A) Pickup Locations Map
+🔹 Q5: Display a scatter plot of trip pickup locations.
+
+Use longitude & latitude from (pickup_longitude, pickup_latitude).
+Color points by VendorID.
+💡 Hint: Use px.scatter_mapbox() from Plotly.
+
+B) Fare Amount Distribution
+🔹 Q6: Show a histogram of fare_amount to analyze pricing trends.
+
+Compare distribution for different vendors.
+💡 Hint: Use px.histogram().
+
+C) Trip Duration vs Distance
+🔹 Q7: Create a scatter plot of trip duration vs. distance.
+
+trip_distance on X-axis, trip_duration on Y-axis.
+Color by payment type.
+💡 Hint: Use px.scatter().
+
+4️⃣ Data Table & Summary Metrics
+✅ Show a data table with filtered trip records.
+✅ Display key statistics:
+
+Total trips
+Average fare
+Most common payment method
+🔹 Q8: What is the most frequent payment method used?
+🔹 Q9: Which pickup location has the highest trip frequency?
+
+💡 Hint: Use dash_table.DataTable() and .mode() for most frequent values.
+
+5️⃣ Bonus Challenge 🚀 (Optional)
+✅ Implement a heatmap of NYC trip density.
+✅ Allow users to switch between different fare categories.
+✅ Predict fare amount using a simple regression model.
+
+🔹 Q10: Can you identify peak hours for NYC taxis?
+
+💡 Hint: Use px.density_mapbox() for heatmaps.
+
+📌 Submission Instructions
+File: Submit your Python script (app.py) and dataset (ny_taxi.csv).
+Run the app and test all interactions before submission.
+Upload your final project to GitHub or a ZIP file.
